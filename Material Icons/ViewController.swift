@@ -22,6 +22,21 @@ class ViewController: NSViewController {
         }
     }
 
+    func listIcons() {
+        let url = URL(fileURLWithPath: "/path/to/directory")
+        var files = [URL]()
+        if let enumerator = FileManager.default.enumerator(at: url, includingPropertiesForKeys: [.isRegularFileKey], options: [.skipsHiddenFiles, .skipsPackageDescendants]) {
+            for case let fileURL as URL in enumerator {
+                do {
+                    let fileAttributes = try fileURL.resourceValues(forKeys:[.isRegularFileKey])
+                    if fileAttributes.isRegularFile! {
+                        files.append(fileURL)
+                    }
+                } catch { print(error, fileURL) }
+            }
+            print(files)
+        }
+    }
 
 }
 

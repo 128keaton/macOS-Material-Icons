@@ -11,6 +11,7 @@
 		8A4F26F82513B00A00386C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F26F72513B00A00386C21 /* ViewController.swift */; };
 		8A4F26FA2513B00B00386C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F26F92513B00B00386C21 /* Assets.xcassets */; };
 		8A4F26FD2513B00B00386C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F26FB2513B00B00386C21 /* Main.storyboard */; };
+		8A4F270F2513B3C300386C21 /* copy-icons.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F270E2513B3C300386C21 /* copy-icons.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8A4F26FC2513B00B00386C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A4F26FE2513B00B00386C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4F26FF2513B00B00386C21 /* Material_Icons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Material_Icons.entitlements; sourceTree = "<group>"; };
+		8A4F270E2513B3C300386C21 /* copy-icons.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "copy-icons.sh"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		8A4F26E92513B00A00386C21 = {
 			isa = PBXGroup;
 			children = (
+				8A4F27092513B24400386C21 /* Scripts */,
 				8A4F26F42513B00A00386C21 /* Material Icons */,
 				8A4F26F32513B00A00386C21 /* Products */,
 			);
@@ -61,6 +64,14 @@
 				8A4F26FF2513B00B00386C21 /* Material_Icons.entitlements */,
 			);
 			path = "Material Icons";
+			sourceTree = "<group>";
+		};
+		8A4F27092513B24400386C21 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				8A4F270E2513B3C300386C21 /* copy-icons.sh */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			files = (
 				8A4F26FA2513B00B00386C21 /* Assets.xcassets in Resources */,
 				8A4F26FD2513B00B00386C21 /* Main.storyboard in Resources */,
+				8A4F270F2513B3C300386C21 /* copy-icons.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
