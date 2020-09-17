@@ -47,6 +47,9 @@ class Icon: CustomStringConvertible, CustomDebugStringConvertible {
             .replacingOccurrences(of: "Hdmi", with: "HDMI")
             .replacingOccurrences(of: "Svideo", with: "S-Video")
             .replacingOccurrences(of: "Dns", with: "DNS")
+            .replacingOccurrences(of: "Rtt", with: "RTT")
+            .replacingOccurrences(of: "Rv", with: "RV")
+            .replacingOccurrences(of: "Ac ", with: "AC ")
             .replacingOccurrences(of: "Mp", with: "MP")
             .replacingOccurrences(of: "Black", with: "")
     }
